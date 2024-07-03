@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signin.css">
+    <style>
+        .heading-button {
+            background: none;
+            width: 100%;
+            border: none;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .heading {
+            color: #95ffb7;
+            text-transform: uppercase;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .form-group p {
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            color: white;
+            margin: 0;
+        }
+        .form-group input {
+            margin-top: 10px;
+            background: transparent;
+            border-radius: 8px;
+            border: solid 1px #a1a1b0;
+            color: #ffffff;
+            height: 30px;
+            width: 200px;
+            font-size: 16px;
+        }
+        .form-group input::placeholder {
+            color: #ffffff;
+            font-size: 16px;
+        }
+        body {
+            background: #6b6b75;
+        }
+        .signin-main-container {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .down-bar {
+            display: flex;
+            justify-content: space-evenly;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .copy-button, .design-button {
+            border: none;
+            background: none;
+            color: black;
+        }
+        .copy-span, .dennis-span {
+            color: red;
+        }
+        .signup-button {
+            border: solid 1px #a1a1b0;
+            width: 150px;
+            height: 50px;
+            background: transparent;
+            color: black;
+            font-weight: bold;
+            font-size: x-large;
+            text-transform: uppercase;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .signup-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .links {
+            display: flex;
+            flex-direction: row;
+        }
+        .links-button {
+            background: none;
+            border: none;
+            color: #f5f5f5;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .main-container
+{
+  position: fixed;
+  left: 0px;
+  right:0px;
+  top:0;
+  background: grey;
+  height: 40px;
+  padding-top: 20px;
+  display:flex;
+  border-radius:6px;
+  justify-content:space-evenly;
+  
+}
+.home-link{
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: times new roman;
+    text-decoration: none;
+    
+}
+.contacts-link{
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: times new roman;
+    text-decoration: none;
+    }
+.review-link{
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: times new roman;
+    text-decoration: none;
+    }
+.signin-link{
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: times new roman;
+    text-decoration: none;
+    }
+.home-button{
+    background: #363632;
+    border: 0;
+    height: 20px;
+    border-radius:10px ;
+    
+}
+.contacts-button{
+    background: #363632;
+    border: 0;
+    height: 20px;
+    border-radius:10px ;
+    
+}
+.review-button{
+    background: #363632;
+    border: 0;
+    height: 20px;
+    border-radius:10px ;
+    
+}
+.signin-button{
+    background: #363632;
+    border: 0;
+    height: 20px;
+    border-radius:10px ;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="main-container">
+       <button class=" home-button">
+    <a class=" home-link" href="index.html">home</a>
+    </button>
+    <button class="contacts-button">
+    <a class=" contacts-link" href="contacts.html">contacts</a>
+    </button>
+    <button class="review-button">
+    <a class=" review-link" href="review.html">review</a>
+    </button>
+    <button class="signin-button">
+    <a class=" signin-link" href="signin.html">signin</a>
+    </button>
+       
+       
+   </div>
+    <button class="heading-button">
+        <h1 class="heading">Sign Yourself Up for the Best Experience</h1>
+    </button>
+
+    <form method="post" action="" id="signUp">
+        <div class="signin-main-container">
+            <div class="form-group">
+                <label class="firstname-para" for="firstname">First Name</label>
+                <input id="firstname" type="text" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+                <label class="password-para" for="lastname">Last Name</label>
+                <input id="lastname" type="text" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <label class="email-para" for="email">Input Email</label>
+                <input id="email" name="email" type="email" placeholder="Email..." required>
+            </div>
+            <div class="form-group">
+                <label class="password-para" for="password">Input Password</label>
+                <input id="password" type="password" placeholder="Password..." required>
+            </div>
+            <div class="signup-container">
+                <input class="signup-button" type="submit" value="Sign Up">
+            </div>
+            <div class="links">
+                <p>Already have an account?</p>
+                <button class="links-button" id="signInButton" type="button">Sign In</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="down-bar">
+        <button class="copy-button">
+            © <span class="copy-span">"Copyright"</span> abiding system
+        </button>
+        <button class="design-button">
+            Designed by <span class="dennis-span">Dennis</span> "Dutchman"
+        </button>
+    </div>
+
+    
+
+    <form method="post" action="login.php" id="signIn" style="display:none;">
+        <div class="signin-main-container">
+            <div class="form-group">
+                <label class="email-para" for="login-email">Input Email</label>
+                <input id="login-email" type="email" placeholder="Email..." required>
+            </div>
+            <div class="form-group">
+                <label class="password-para" for="login-password">Input Password</label>
+                <input id="login-password" type="password" placeholder="Password..." required>
+            </div>
+            <div class="signup-container">
+                <input class="signup-button" type="submit" value="Log In">
+            </div>
+            <div class="links">
+                <p>Don't have an account?</p>
+                <button class="links-button" id="signUpButton" type="button">Sign Up</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="down-bar">
+        <button class="copy-button">
+            © <span class="copy-span">"Copyright"</span> abiding system
+        </button>
+        <button class="design-button">
+            Designed by <span class="dennis-span">Dennis</span> "Dutchman"
+        </button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const signUpButton = document.getElementById('signUpButton');
+            const signInButton = document.getElementById('signInButton');
+            const signInForm = document.getElementById('signIn');
+            const signUpForm = document.getElementById('signUp');
+
+            signUpButton.addEventListener('click', function() {
+                signInForm.style.display = "none";
+                signUpForm.style.display = "block";
+            });
+
+            signInButton.addEventListener('click', function() {
+                signInForm.style.display = "block";
+                signUpForm.style.display = "none";
+            });
+        });
+    </script>
+</body>
+</html>

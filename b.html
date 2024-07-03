@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Reservation Form</title>
+    <style>
+        body {
+            background: #7a7a7a;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        header {
+            color: #6bb893;
+            text-transform: uppercase;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .main-container {
+            background: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #afafaf;
+            font-size: 16px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group .flex input {
+            width: calc(48% - 22px);
+        }
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+      
+
+    </style>
+</head>
+<body>
+    
+    <div class="main-container">
+        <header>kitchen palace Reservation Form</header>
+        <form>
+            <div class="form-group flex">
+                <div>
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                </div>
+                <div>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="roomtype">Room Type</label>
+                <select id="roomtype" name="roomtype" required>
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="single">queen room</option>
+                    <option value="double">triple room</option>
+                    <option value="bedsitter">delux room</option>
+                    <option value="one-bedroom">junor suit</option>
+                    <option value="two-bedroom">double Bedroom with a view</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" placeholder="e.g., 2" required>
+            </div>
+            <div class="form-group">
+                <label for="arrival">Arrival Date & Time</label>
+                <input type="datetime-local" id="arrival" name="arrival" required>
+            </div>
+            <div class="form-group">
+                <label for="departure">Departure Date</label>
+                <input type="date" id="departure" name="departure" required>
+            </div>
+            <div class="form-group">
+                <label>Free Pickup?</label>
+                <div>
+                    <input type="radio" id="pickup-yes" name="pickup" value="yes" required>
+                    <label for="pickup-yes">Yes Please! Pick me up on arrival</label>
+                </div>
+                <div>
+                    <input type="radio" id="pickup-no" name="pickup" value="no" required>
+                    <label for="pickup-no">No Thanks - I'll make my own way there</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" name="requests" placeholder="Any special requests?" rows="4"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
